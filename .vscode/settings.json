@@ -1,0 +1,34 @@
+{
+  "cSpell.words": [
+    "apexcharts",
+    "digg",
+    "facebook",
+    "inspyre",
+    "Inspyre",
+    "instagram",
+    "swiper",
+    "Swiper",
+    "tiktok",
+    "xaxis",
+    "yaxis",
+    "youtube"
+  ],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "theme"
+  ],
+  "tailwindCSS.experimental.classRegex": [
+    [
+      "twMerge\\(([^)]*)\\)",
+      "[\"'`]([^\"'`]*).*?[\"'`]"
+    ],
+    [
+      "createTheme(?:<\\w+>)?\\s*\\(([^)]*)\\)",
+      "{?\\s?[\\w].*:\\s*?[\"'`]([^\"'`]*).*?,?\\s?}?"
+    ]
+  ]
+}

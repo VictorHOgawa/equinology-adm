@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+html {
+  scrollbar-gutter: stable; /* reserva espaço pro gutter */
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.AccordionChevron {
+  transition: transform 300ms;
+}
+.AccordionTrigger[data-state="open"] > .AccordionChevron {
+  transform: rotate(180deg);
+}
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.modal-open {
+  overflow: hidden;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.no-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.apexcharts-tooltip {
+  background: #f3f3f3;
+  color: black;
+}
+
+.apexcharts-bar-area:hover {
+  fill: #154734;
+  opacity: 100;
+}
+
+.swiper-slide {
+  max-width: fit-content;
+}
