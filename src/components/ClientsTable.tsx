@@ -221,7 +221,7 @@ export const ClientsTable: React.FC<ClientsTableProps> = () => {
           <div className="border-default-300 relative flex h-8 w-full flex-row items-center gap-2 overflow-hidden rounded-md border border-primary bg-white py-0 pl-2 focus:border-secondary/60 focus:ring-secondary/60 md:max-w-xs">
             <input
               onChange={(e) => debouncedHandleStopTyping(e.target.value)}
-              placeholder="Escreva o nome do influencer"
+              placeholder="Escreva o nome do cliente"
               className="w-full bg-transparent py-2 text-sm outline-none"
             />
             <div className="flex h-full items-center justify-center bg-white px-2">

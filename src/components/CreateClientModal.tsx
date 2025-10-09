@@ -171,12 +171,12 @@ export const CreateClientModal: FC<CreateClientModalProps> = ({
       setIsCreatingClient(true);
       const Token = cookies.get(token);
       const create = await AuthPostAPI(
-        "/influencer/signup",
+        "/client/signup",
         form.getValues(),
         Token,
       );
       if (create.status === 200) {
-        toast.success("Influencer criado com sucesso!");
+        toast.success("Client criado com sucesso!");
         onClose();
         onSuccess?.();
         return setIsCreatingClient(false);

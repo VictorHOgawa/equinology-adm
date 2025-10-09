@@ -77,7 +77,7 @@ export function DashBoard() {
         <div className="flex w-full gap-8 py-4 pr-4">
           <DashBoardCard
             quantity={items.signatureTotalQuantity}
-            title={"Total de assinaturas"}
+            title={"Total de clientes"}
             icon={
               <Image
                 src={"/dashboard/1.svg"}
@@ -116,7 +116,7 @@ export function DashBoard() {
           />
           <DashBoardCard
             quantity={items.totalInfluencerQuantity}
-            title={"Total de influenciadores"}
+            title={"Total de animais"}
             icon={
               <Image
                 src={"/dashboard/4.svg"}
@@ -129,7 +129,7 @@ export function DashBoard() {
           />
           <DashBoardCard
             quantity={items.newInfluencerQuantity}
-            title={"Novos Influenciadores"}
+            title={"Novos clientes"}
             icon={
               <Image
                 src={"/dashboard/7.svg"}
@@ -142,7 +142,7 @@ export function DashBoard() {
           />
           <DashBoardCard
             quantity={items.activeInfluencerQuantity}
-            title={"Influenciadores ativos"}
+            title={"Clientes ativos"}
             icon={
               <Image
                 src={"/dashboard/5.svg"}
@@ -155,7 +155,7 @@ export function DashBoard() {
           />
           <DashBoardCard
             quantity={items.inactiveInfluencerQuantity}
-            title={"Influenciadores inativos"}
+            title={"Clientes inativos"}
             icon={
               <Image
                 src={"/dashboard/6.svg"}
